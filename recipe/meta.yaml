@@ -1,4 +1,4 @@
-{% set version = '1.4-0' %}
+{% set version = "1.5-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spacesXYZ_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spacesXYZ/spacesXYZ_{{ version }}.tar.gz
-  sha256: c7a4ea70bb081c2633ad77b897db17257c76303d94f8fd1ceed732e299f4d624
+  sha256: 28aa5c46fa2b7f283af4e5371f253a9940643cece1af8c8777799f4c41283fa0
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,10 +41,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=spacesXYZ
   license: GPL-3.0-or-later
-  summary: Functions for converting among CIE XYZ, xyY, Lab, and Luv. Calculate Correlated Color
-    Temperature (CCT) and the Planckian and daylight loci. The XYZs of some standard
-    illuminants and some standard linear chromatic adaptation transforms (CATs) are
-    included. Three standard color difference metrics are included.
+  summary: Functions for converting among CIE XYZ, xyY, Lab, and Luv. Calculate Correlated Color Temperature (CCT) and the Planckian and daylight loci. The XYZs of some standard illuminants and some standard linear chromatic adaptation transforms (CATs) are included. Three standard color difference metrics are included.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
