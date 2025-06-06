@@ -1,4 +1,4 @@
-{% set version = "1.5-1" %}
+{% set version = "1.6-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spacesXYZ_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spacesXYZ/spacesXYZ_{{ version }}.tar.gz
-  sha256: 28aa5c46fa2b7f283af4e5371f253a9940643cece1af8c8777799f4c41283fa0
+  sha256: 72ea0abdd79af95939209060e30017744a2586bb387b4d10e3e3af11f2b67bb7
 
 build:
   number: 0
